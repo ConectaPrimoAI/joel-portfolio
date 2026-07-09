@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOUGRETOUCH - Design Gráfico e Motion Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+        }
+        .accent-green {
+            color: #00ff9d;
+        }
+        .bg-accent-green {
+            background-color: #00ff9d;
+        }
+        .card-bg {
+            background-color: #161616;
+            border: 1px solid #262626;
+        }
+        .marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 2rem;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 2rem;
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Nav -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-black/50 backdrop-blur-md">
+        <div class="font-black text-xl tracking-tighter">DOUGRETOUCH</div>
+        <button class="bg-white text-black px-4 py-2 rounded-full font-bold text-sm">MENU</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-height-[100vh] pt-32 pb-20 px-6 flex flex-col items-center text-center hero-gradient">
+        <div class="absolute top-40 left-10 md:left-40 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl rotate-[-12deg] text-sm font-bold border border-white/20">Disponível</div>
+        <div class="absolute top-60 right-10 md:right-40 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl rotate-[12deg] text-sm font-bold border border-white/20">Criativo</div>
+        <div class="absolute bottom-40 right-20 md:right-60 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl rotate-[-5deg] text-sm font-bold border border-white/20">Brabo</div>
+
+        <h1 class="text-4xl md:text-7xl font-black accent-green mb-4 tracking-tighter">DOUGRETOUCH</h1>
+        <h2 class="text-3xl md:text-6xl font-black max-w-4xl leading-tight mb-8">Sua marca merece ser vista, ouvida e lembrada</h2>
+        
+        <a href="https://api.whatsapp.com/send/?phone=%2B5562983420754" class="bg-accent-green text-black px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform">
+            Entre em contato
+        </a>
+
+        <!-- Animated Background Element (The circular pattern) -->
+        <div class="mt-20 w-full max-w-2xl aspect-square relative flex items-center justify-center">
+            <div class="absolute inset-0 rounded-full border-[20px] border-white/5 scale-[1.2]"></div>
+            <div class="absolute inset-0 rounded-full border-[20px] border-white/10 scale-[1.1]"></div>
+            <div class="absolute inset-0 rounded-full border-[20px] border-white/15 scale-[1.0]"></div>
+            <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center text-black font-black text-2xl text-center p-8">
+                CABE UM DOCINHO?
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card-bg p-8 rounded-3xl">
+            <img src="https://framerusercontent.com/images/pN5vs4sqgTJlyDGIWZZHHOuRU.png" alt="Icon" class="w-16 h-16 mb-6">
+            <h3 class="text-xl font-bold mb-4">Entrega rápida e confiável</h3>
+            <p class="text-gray-400">Nós nos movemos na velocidade da criatividade – e da cafeína. Suas deadlines que lutem.</p>
+        </div>
+        <div class="card-bg p-8 rounded-3xl">
+            <img src="https://framerusercontent.com/images/YvLoEdY6oYJv1tB16aWO0PWgOA.png" alt="Icon" class="w-16 h-16 mb-6">
+            <h3 class="text-xl font-bold mb-4">Preço claro e sem surpresas</h3>
+            <p class="text-gray-400">Sem taxas ocultas, sem cobranças sorrateiras – apenas preços claros e diretos.</p>
+        </div>
+        <div class="card-bg p-8 rounded-3xl">
+            <img src="https://framerusercontent.com/images/71HUXtlPpznGjux39GFgaYmyDY.png" alt="Icon" class="w-16 h-16 mb-6">
+            <h3 class="text-xl font-bold mb-4">Vários serviços sobre o mesmo teto</h3>
+            <p class="text-gray-400">Projeto? Marca? Motion design? Dancinhas? (Ok, talvez não essa última... ainda.)</p>
+        </div>
+    </section>
+
+    <!-- Tools Marquee -->
+    <section class="py-10 bg-black/30">
+        <div class="text-center mb-8">
+            <span class="bg-white/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Design</span>
+            <h2 class="text-3xl font-black mt-4">Eu construo o foguete, você decola</h2>
+        </div>
+        <div class="marquee py-8">
+            <div class="marquee-content">
+                <img src="https://framerusercontent.com/images/Z20IMsSfP9pDrbLteOt4La0KaK4.png" alt="Photoshop" class="h-12">
+                <img src="https://framerusercontent.com/images/GZtn2XQwveHtMP8cd45fvp0heI.png" alt="Illustrator" class="h-12">
+                <img src="https://framerusercontent.com/images/qxY4erMGwLMjwnkTshMwX1SW9M.png" alt="After Effects" class="h-12">
+                <img src="https://framerusercontent.com/images/yK5wWrpSdHdl2bWbL9zpQAGgKZQ.png" alt="Figma" class="h-12">
+                <img src="https://framerusercontent.com/images/21Tvwf5PVRPiaBaBBjfO20GVk.png" alt="DaVinci" class="h-12">
+                <!-- Repeat for seamless loop -->
+                <img src="https://framerusercontent.com/images/Z20IMsSfP9pDrbLteOt4La0KaK4.png" alt="Photoshop" class="h-12">
+                <img src="https://framerusercontent.com/images/GZtn2XQwveHtMP8cd45fvp0heI.png" alt="Illustrator" class="h-12">
+                <img src="https://framerusercontent.com/images/qxY4erMGwLMjwnkTshMwX1SW9M.png" alt="After Effects" class="h-12">
+                <img src="https://framerusercontent.com/images/yK5wWrpSdHdl2bWbL9zpQAGgKZQ.png" alt="Figma" class="h-12">
+                <img src="https://framerusercontent.com/images/21Tvwf5PVRPiaBaBBjfO20GVk.png" alt="DaVinci" class="h-12">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="bg-white/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Serviços</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-4">O que faço (e faço muito bem)</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card-bg p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Design Gráfico</h3>
+                <p class="text-gray-400">Um designer gráfico é um alquimista visual que transforma ideias em arte, usando cores, formas e tipografias.</p>
+            </div>
+            <div class="card-bg p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Motion Design</h3>
+                <p class="text-gray-400">Dando vida às imagens, transformando conceitos estáticos em animações cativantes que fluem com energia.</p>
+            </div>
+            <div class="card-bg p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Identidade visual</h3>
+                <p class="text-gray-400">Captura a essência e a personalidade de uma empresa em símbolos, cores e textos memoráveis.</p>
+            </div>
+            <div class="card-bg p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Edição de vídeo</h3>
+                <p class="text-gray-400">Transforma gravações brutas em histórias cativantes com cortes, transições e um toque artístico.</p>
+            </div>
+            <div class="card-bg p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Soluções criativas</h3>
+                <p class="text-gray-400">Combinação de estética e funcionalidade para comunicar mensagens de forma clara e atraente.</p>
+            </div>
+            <div class="card-bg p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Inteligência artificial</h3>
+                <p class="text-gray-400">Automatiza tarefas repetitivas e gera insights criativos com base em tendências e dados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="bg-white/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Portfolio</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-4">Olha o que eu já fiz!</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="rounded-3xl overflow-hidden group relative">
+                <img src="https://framerusercontent.com/images/EGMMwVVMvNzjZIb8WXAbhtl28c.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-6 left-6">
+                    <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden group relative">
+                <img src="https://framerusercontent.com/images/nORG143tG3JnUyHR3aDdS02Yb0.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-6 left-6">
+                    <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden group relative">
+                <img src="https://framerusercontent.com/images/HgCPZqSN53rgONeJ5VUbxSBDc.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-6 left-6">
+                    <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden group relative">
+                <img src="https://framerusercontent.com/images/dB7xGujo6JZWLxqLxisopLzix9w.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-6 left-6">
+                    <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div>
+                <div class="font-black text-3xl tracking-tighter mb-6">DOUGRETOUCH</div>
+                <div class="flex flex-col gap-2 text-gray-400">
+                    <a href="tel:+5562983420754" class="hover:text-white">+55 62 983420754</a>
+                    <a href="mailto:createdouglas@gmail.com" class="hover:text-white">createdouglas@gmail.com</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+                <div>
+                    <h4 class="font-bold mb-4">Páginas</h4>
+                    <ul class="text-gray-400 flex flex-col gap-2">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">Serviços</a></li>
+                        <li><a href="#" class="hover:text-white">Benefícios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Social</h4>
+                    <ul class="text-gray-400 flex flex-col gap-2">
+                        <li><a href="#" class="hover:text-white">Linkedin</a></li>
+                        <li><a href="#" class="hover:text-white">Whatsapp</a></li>
+                        <li><a href="#" class="hover:text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-gray-500 text-sm flex justify-between">
+            <p>© Douglas Rodrigues, 2025</p>
+            <p>Clonado com Manus AI</p>
+        </div>
+    </footer>
+</body>
+</html>
