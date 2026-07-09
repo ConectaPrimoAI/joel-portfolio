@@ -44,6 +44,38 @@
             from { transform: translateX(0); }
             to { transform: translateX(-100%); }
         }
+        .counter {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #00ff9d;
+        }
+        .counter-label {
+            font-size: 0.875rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+        .benefit-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #161616 100%);
+            border: 1px solid #262626;
+            border-radius: 2rem;
+            padding: 3rem;
+            text-align: center;
+        }
+        .cta-image {
+            max-width: 200px;
+            margin: 0 auto 2rem;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +86,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-height-[100vh] pt-32 pb-20 px-6 flex flex-col items-center text-center hero-gradient">
+    <section class="relative min-h-screen pt-32 pb-20 px-6 flex flex-col items-center text-center hero-gradient">
         <div class="absolute top-40 left-10 md:left-40 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl rotate-[-12deg] text-sm font-bold border border-white/20">Disponível</div>
         <div class="absolute top-60 right-10 md:right-40 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl rotate-[12deg] text-sm font-bold border border-white/20">Criativo</div>
         <div class="absolute bottom-40 right-20 md:right-60 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl rotate-[-5deg] text-sm font-bold border border-white/20">Brabo</div>
@@ -62,18 +94,16 @@
         <h1 class="text-4xl md:text-7xl font-black accent-green mb-4 tracking-tighter">DOUGRETOUCH</h1>
         <h2 class="text-3xl md:text-6xl font-black max-w-4xl leading-tight mb-8">Sua marca merece ser vista, ouvida e lembrada</h2>
         
-        <a href="https://api.whatsapp.com/send/?phone=%2B5562983420754" class="bg-accent-green text-black px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform">
+        <a href="https://api.whatsapp.com/send/?phone=%2B5562983420754&text=%EF%BF%BD+Ol%C3%A1+Douglas%2C+tudo+bem%3F%0AGostaria+de+ter+mais+%2Ainforma%C3%A7%C3%B5es%2A+sobre+seus+servi%C3%A7os+de+%2Adesign.%2A&type=phone_number&app_absent=0" class="bg-accent-green text-black px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform">
             Entre em contato
         </a>
 
-        <!-- Animated Background Element (The circular pattern) -->
+        <!-- Animated Background Element with Product Image -->
         <div class="mt-20 w-full max-w-2xl aspect-square relative flex items-center justify-center">
             <div class="absolute inset-0 rounded-full border-[20px] border-white/5 scale-[1.2]"></div>
             <div class="absolute inset-0 rounded-full border-[20px] border-white/10 scale-[1.1]"></div>
             <div class="absolute inset-0 rounded-full border-[20px] border-white/15 scale-[1.0]"></div>
-            <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center text-black font-black text-2xl text-center p-8">
-                CABE UM DOCINHO?
-            </div>
+            <img src="https://framerusercontent.com/images/hzVqLqVxQqKxSxNxQxKxQxKxQxKx.jpg" alt="Produto" class="w-48 h-48 object-cover rounded-full">
         </div>
     </section>
 
@@ -119,6 +149,34 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="counter">19</div>
+                <div class="text-sm">+</div>
+                <div class="counter-label">Clientes atendidos</div>
+            </div>
+            <div>
+                <div class="counter">31</div>
+                <div class="text-sm">+</div>
+                <div class="counter-label">Projetos entregues</div>
+            </div>
+            <div>
+                <div class="counter">5</div>
+                <div class="counter-label">anos<br>Na área</div>
+            </div>
+            <div>
+                <div class="counter">58</div>
+                <div class="text-sm">%</div>
+                <div class="counter-label">Clientes satisfeitos</div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <h3 class="text-2xl font-black">Números</h3>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="py-20 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
@@ -128,27 +186,72 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="card-bg p-8 rounded-3xl">
                 <h3 class="text-2xl font-bold mb-4">Design Gráfico</h3>
-                <p class="text-gray-400">Um designer gráfico é um alquimista visual que transforma ideias em arte, usando cores, formas e tipografias.</p>
+                <p class="text-gray-400">Um designer gráfico é um alquimista visual que transforma ideias em arte, usando cores, formas e tipografias para contar histórias e transmitir emoções. Com um toque de criatividade e técnica, um designer gráfico dá vida ao que antes era apenas um conceito, criando experiências visuais que conectam e inspiram.</p>
             </div>
             <div class="card-bg p-8 rounded-3xl">
                 <h3 class="text-2xl font-bold mb-4">Motion Design</h3>
-                <p class="text-gray-400">Dando vida às imagens, transformando conceitos estáticos em animações cativantes que fluem com energia.</p>
+                <p class="text-gray-400">Um motion designer trabalha com movimento, dando vida às imagens, transformando conceitos estáticos em animações cativantes. Eles combinam gráficos, som e tempo para criar histórias dinâmicas que fluem com energia e emoção, capturando a atenção e transmitindo mensagens de forma poderosa.</p>
             </div>
             <div class="card-bg p-8 rounded-3xl">
                 <h3 class="text-2xl font-bold mb-4">Identidade visual</h3>
-                <p class="text-gray-400">Captura a essência e a personalidade de uma empresa em símbolos, cores e textos memoráveis.</p>
+                <p class="text-gray-400">Captura a essência e a personalidade de uma empresa em símbolos, cores e textos, criando marcas que identificam, comunicam e conectam. Transforma ideias em emblemas memoráveis, que se tornam a cara de uma marca no mundo.</p>
             </div>
             <div class="card-bg p-8 rounded-3xl">
                 <h3 class="text-2xl font-bold mb-4">Edição de vídeo</h3>
-                <p class="text-gray-400">Transforma gravações brutas em histórias cativantes com cortes, transições e um toque artístico.</p>
+                <p class="text-gray-400">Transforma gravações e imagens brutas em histórias cativantes. Com cortes, transições e um toque artístico, ele orquestra imagens, som e ritmo para criar uma experiência visual envolvente que prende a atenção e deixa uma marca duradoura.</p>
             </div>
             <div class="card-bg p-8 rounded-3xl">
                 <h3 class="text-2xl font-bold mb-4">Soluções criativas</h3>
-                <p class="text-gray-400">Combinação de estética e funcionalidade para comunicar mensagens de forma clara e atraente.</p>
+                <p class="text-gray-400">Traduz as necessidades dos clientes em visuais impactantes. É a combinação de estética e funcionalidade para comunicar mensagens de forma clara e atraente, criando composições que resolvem problemas e elevam a marca do cliente.</p>
             </div>
             <div class="card-bg p-8 rounded-3xl">
                 <h3 class="text-2xl font-bold mb-4">Inteligência artificial</h3>
-                <p class="text-gray-400">Automatiza tarefas repetitivas e gera insights criativos com base em tendências e dados.</p>
+                <p class="text-gray-400">Automatiza tarefas repetitivas além de gerar insights criativos com base em tendências e dados. O designer pode experimentar rapidamente novas ideias, otimizar fluxos de trabalho e focar mais na criação.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="bg-white/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Benefícios</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-4">Porque me escolher</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/yBsl7wO7dvRGKnkzXsedaMgqUk.png" alt="Criatividade" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">Criatividade</h3>
+                <p class="text-gray-400">Ideias que quebram os padrões e tornam a sua marca inesquecível.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/RjQdEs6HYUk3H73pX0FTlrFzp4.png" alt="Design que entrega" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">Design que entrega</h3>
+                <p class="text-gray-400">Visuais inteligentes criados para expandir sua marca.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/NXvTIsvEzRCNFp5eX6y78A2DOs.png" alt="Flexibilidade" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">Flexibilidade</h3>
+                <p class="text-gray-400">Soluções personalizadas para cada necessidade</p>
+            </div>
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/ZkX4C69JxyAyD4KNk3iQC08pCE.png" alt="O ser humano é o centro" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">O ser humano é o centro</h3>
+                <p class="text-gray-400">Conecto produtos e serviços ao seu público-alvo</p>
+            </div>
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/IsOkoMga9kkFvfKkx4EdTQWs.png" alt="Visão Global, Foco Local" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">Visão Global, Foco Local</h3>
+                <p class="text-gray-400">Tendências globais com uma compreensão local.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/2cHJ20WYKW7vPzurrfuEBbg.png" alt="Caçador de ideias" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">Caçador de ideias</h3>
+                <p class="text-gray-400">Sempre pesquisando novas ideias para te destacar</p>
+            </div>
+            <div class="benefit-card">
+                <img src="https://framerusercontent.com/images/9YXhFjAV8CsnxIj9lpMNut2s.png" alt="Cada detalhe importa" class="benefit-icon">
+                <h3 class="text-xl font-bold mb-3">Cada detalhe importa</h3>
+                <p class="text-gray-400">Cada elemento é intencional e construído para chamar atenção</p>
             </div>
         </div>
     </section>
@@ -160,25 +263,25 @@
             <h2 class="text-4xl md:text-5xl font-black mt-4">Olha o que eu já fiz!</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="rounded-3xl overflow-hidden group relative">
+            <div class="rounded-3xl overflow-hidden group relative h-96">
                 <img src="https://framerusercontent.com/images/EGMMwVVMvNzjZIb8WXAbhtl28c.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-6 left-6">
                     <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
                 </div>
             </div>
-            <div class="rounded-3xl overflow-hidden group relative">
+            <div class="rounded-3xl overflow-hidden group relative h-96">
                 <img src="https://framerusercontent.com/images/nORG143tG3JnUyHR3aDdS02Yb0.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-6 left-6">
                     <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
                 </div>
             </div>
-            <div class="rounded-3xl overflow-hidden group relative">
+            <div class="rounded-3xl overflow-hidden group relative h-96">
                 <img src="https://framerusercontent.com/images/HgCPZqSN53rgONeJ5VUbxSBDc.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-6 left-6">
                     <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
                 </div>
             </div>
-            <div class="rounded-3xl overflow-hidden group relative">
+            <div class="rounded-3xl overflow-hidden group relative h-96">
                 <img src="https://framerusercontent.com/images/dB7xGujo6JZWLxqLxisopLzix9w.png" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-6 left-6">
                     <span class="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full font-bold">Portfólio completo ></span>
@@ -187,39 +290,105 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="cta-section">
+            <img src="https://framerusercontent.com/images/cG8MM6jC66dsEnF9-rQpYw.png" alt="Let's Go" class="cta-image">
+            <h2 class="text-3xl md:text-4xl font-black mb-4">Precisa de um orçamento personalizado?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Não deixe suas ideias ficarem paradas. Me mande uma mensagem e fale sobre seu negócio.</p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5562983420754&text=%EF%BF%BD+Ol%C3%A1+Douglas%2C+tudo+bem%3F%0AGostaria+de+ter+mais+%2Ainforma%C3%A7%C3%B5es%2A+sobre+seus+servi%C3%A7os+de+%2Adesign.%2A&type=phone_number&app_absent=0" class="inline-block bg-accent-green text-black px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform">
+                Vamos conversar
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="py-20 px-6 border-t border-white/10">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-                <div class="font-black text-3xl tracking-tighter mb-6">DOUGRETOUCH</div>
-                <div class="flex flex-col gap-2 text-gray-400">
-                    <a href="tel:+5562983420754" class="hover:text-white">+55 62 983420754</a>
-                    <a href="mailto:createdouglas@gmail.com" class="hover:text-white">createdouglas@gmail.com</a>
-                </div>
+                <h4 class="font-black text-accent-green mb-4 text-lg">Telefone</h4>
+                <a href="tel:+5562983420754" class="text-gray-400 hover:text-accent-green transition-colors">+55 62 983420754</a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
-                <div>
-                    <h4 class="font-bold mb-4">Páginas</h4>
-                    <ul class="text-gray-400 flex flex-col gap-2">
-                        <li><a href="#" class="hover:text-white">Home</a></li>
-                        <li><a href="#" class="hover:text-white">Serviços</a></li>
-                        <li><a href="#" class="hover:text-white">Benefícios</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Social</h4>
-                    <ul class="text-gray-400 flex flex-col gap-2">
-                        <li><a href="#" class="hover:text-white">Linkedin</a></li>
-                        <li><a href="#" class="hover:text-white">Whatsapp</a></li>
-                        <li><a href="#" class="hover:text-white">Instagram</a></li>
-                    </ul>
-                </div>
+            <div>
+                <h4 class="font-black text-accent-green mb-4 text-lg">Email</h4>
+                <a href="mailto:createdouglas@gmail.com" class="text-gray-400 hover:text-accent-green transition-colors">createdouglas@gmail.com</a>
+            </div>
+            <div>
+                <h4 class="font-black text-accent-green mb-4 text-lg">Funcionamento</h4>
+                <p class="text-gray-400">Segunda à Sábado: 08 às 18hs</p>
+            </div>
+            <div>
+                <h4 class="font-black text-accent-green mb-4 text-lg">Home</h4>
+                <ul class="text-gray-400 flex flex-col gap-2">
+                    <li><a href="#" class="hover:text-accent-green transition-colors">Serviços</a></li>
+                    <li><a href="#" class="hover:text-accent-green transition-colors">Benefícios</a></li>
+                    <li><a href="#" class="hover:text-accent-green transition-colors">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-accent-green transition-colors">Sobre</a></li>
+                </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-gray-500 text-sm flex justify-between">
-            <p>© Douglas Rodrigues, 2025</p>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div>
+                <h4 class="font-black text-accent-green mb-4 text-lg">Linkedin</h4>
+                <a href="#" class="text-gray-400 hover:text-accent-green transition-colors">Linkedin</a>
+            </div>
+            <div>
+                <h4 class="font-black text-accent-green mb-4 text-lg">Whatsapp</h4>
+                <a href="#" class="text-gray-400 hover:text-accent-green transition-colors">Whatsapp</a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto mb-12">
+            <h4 class="font-black text-accent-green mb-4 text-lg">Instagram</h4>
+            <a href="#" class="text-gray-400 hover:text-accent-green transition-colors">Instagram</a>
+        </div>
+
+        <div class="max-w-7xl mx-auto text-center mb-8">
+            <h1 class="text-6xl md:text-8xl font-black accent-green tracking-tighter">DOUGRETOUCH</h1>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 text-gray-500 text-sm flex flex-col md:flex-row justify-between gap-4">
+            <p>©Douglas Rodrigues, 2025</p>
             <p>Clonado com Manus AI</p>
         </div>
     </footer>
+
+    <script>
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                let current = 0;
+                const increment = target / 50;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        }
+
+        // Trigger animation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('section:has(.counter)');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
 </body>
 </html>
