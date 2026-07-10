@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Cistrahenn - Programação, Design e Vídeo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; }
+        .bg-custom-blue { background-color: #0066ff; }
+        .text-custom-blue { color: #0066ff; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header / Topo -->
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <h1 class="text-2xl font-black tracking-tighter">Joel Cistrahenn</h1>
+        <div class="flex gap-4">
+            <span class="glass px-4 py-2 rounded-full text-sm floating">Programação</span>
+            <span class="glass px-4 py-2 rounded-full text-sm floating" style="animation-delay: 0.5s;">Design</span>
+            <span class="glass px-4 py-2 rounded-full text-sm floating" style="animation-delay: 1s;">Vídeo</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Criando soluções digitais que <span class="text-custom-blue">impactam</span> e <span class="text-custom-blue">conectam</span>.</h2>
+        <p class="text-xl text-gray-400 mb-10">Especialista em transformar ideias em realidade através de código, design e audiovisual.</p>
+        
+        <!-- Foto e Nome -->
+        <div class="mb-12">
+            <div class="w-32 h-32 bg-gray-800 rounded-full mx-auto mb-4 border-4 border-custom-blue overflow-hidden">
+                <!-- Placeholder para a foto do Joel -->
+                <img src="https://ui-avatars.com/api/?name=Joel+Cistrahenn&background=0066ff&color=fff&size=128" alt="Joel Cistrahenn" class="w-full h-full object-cover">
+            </div>
+            <p class="text-2xl font-bold">Joel Cistrahenn</p>
+        </div>
+
+        <p class="text-2xl italic font-medium">"Eu construo o foguete e te ajudo a decolar"</p>
+    </section>
+
+    <!-- Ferramentas -->
+    <section class="py-16 bg-white/5">
+        <div class="max-w-7xl mx-auto px-6 overflow-hidden">
+            <div class="flex gap-12 items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-brands fa-vs-code text-4xl"></i> <!-- Usando ícones como fallback -->
+                <span class="font-bold">VS Code</span>
+                <span class="font-bold">CapCut</span>
+                <span class="font-bold">After Effects</span>
+                <span class="font-bold">Photoshop</span>
+                <span class="font-bold">ChatGPT</span>
+                <span class="font-bold">Claude</span>
+                <span class="font-bold">Gemini</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Números -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <div class="glass p-10 rounded-3xl">
+                <p class="text-6xl font-black text-custom-blue mb-2">5</p>
+                <p class="text-gray-400 uppercase tracking-widest text-sm">Anos de Experiência</p>
+            </div>
+            <div class="glass p-10 rounded-3xl">
+                <p class="text-6xl font-black text-custom-blue mb-2">4</p>
+                <p class="text-gray-400 uppercase tracking-widest text-sm">Anos em IA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h3 class="text-4xl font-black mb-12 text-center">Serviços</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="glass p-8 rounded-3xl hover:bg-custom-blue transition-all group">
+                <i class="fas fa-code text-3xl mb-4 group-hover:text-white"></i>
+                <h4 class="text-xl font-bold mb-2">Programação</h4>
+                <p class="text-gray-400 group-hover:text-white/80">Desenvolvimento de aplicações web modernas e escaláveis.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:bg-custom-blue transition-all group">
+                <i class="fas fa-paint-brush text-3xl mb-4 group-hover:text-white"></i>
+                <h4 class="text-xl font-bold mb-2">Design</h4>
+                <p class="text-gray-400 group-hover:text-white/80">Identidade visual e interfaces focadas na experiência do usuário.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:bg-custom-blue transition-all group">
+                <i class="fas fa-video text-3xl mb-4 group-hover:text-white"></i>
+                <h4 class="text-xl font-bold mb-2">Vídeo Maker</h4>
+                <p class="text-gray-400 group-hover:text-white/80">Edição e produção de vídeos profissionais de alto impacto.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:bg-custom-blue transition-all group">
+                <i class="fas fa-robot text-3xl mb-4 group-hover:text-white"></i>
+                <h4 class="text-xl font-bold mb-2">IA</h4>
+                <p class="text-gray-400 group-hover:text-white/80">Integração e soluções baseadas em Inteligência Artificial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que já fiz -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h3 class="text-4xl font-black mb-12 text-center">O que já fiz</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Bonna Pizza -->
+            <div class="glass rounded-3xl overflow-hidden">
+                <div class="p-8">
+                    <h4 class="text-2xl font-bold mb-2">Bonna Pizza Chapecó</h4>
+                    <p class="text-gray-400 mb-6">Design e VideoMaker para redes sociais.</p>
+                    <div class="aspect-video bg-gray-800 rounded-2xl flex items-center justify-center text-gray-500">
+                        [Carrossel de Conteúdos Bonna Pizza]
+                    </div>
+                </div>
+            </div>
+            <!-- Katy Moda Íntima -->
+            <div class="glass rounded-3xl overflow-hidden">
+                <div class="p-8">
+                    <h4 class="text-2xl font-bold mb-2">Katy Moda Íntima</h4>
+                    <p class="text-gray-400 mb-6">Desenvolvimento de sistema de gestão e portfólio.</p>
+                    <a href="https://katy-moda-intima.vercel.app" target="_blank" class="text-custom-blue font-bold hover:underline">Ver projeto →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Em Produção -->
+        <div class="mt-12 glass p-8 rounded-3xl border-dashed border-2 border-custom-blue/30">
+            <h4 class="text-2xl font-bold mb-2 text-center">Em Produção: <span class="text-custom-blue">Conecta Primo AI</span></h4>
+            <p class="text-gray-400 text-center">Meu app de IA tudo em um que estou criando.</p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="py-20 px-6 bg-custom-blue text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-4xl font-black mb-6">Sobre</h3>
+            <p class="text-2xl leading-relaxed">Sou um profissional multidisciplinar focado em entregar resultados reais através da tecnologia e criatividade.</p>
+        </div>
+    </section>
+
+    <!-- Contatos -->
+    <section class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h3 class="text-4xl font-black mb-12">Contatos</h3>
+        <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+            <a href="tel:+5549999235188" class="glass px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white hover:text-black transition-all">
+                <i class="fas fa-phone"></i> +55 49 9 99235188
+            </a>
+            <a href="mailto:cistrahennjoel@gmail.com" class="glass px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white hover:text-black transition-all">
+                <i class="fas fa-envelope"></i> cistrahennjoel@gmail.com
+            </a>
+            <a href="https://instagram.com/Joel.cistrahenn" target="_blank" class="glass px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white hover:text-black transition-all">
+                <i class="fab fa-instagram"></i> @Joel.cistrahenn
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        &copy; 2026 Joel Cistrahenn. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
